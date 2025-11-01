@@ -1,0 +1,235 @@
+html,
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    display: flex;
+    flex-direction: row;
+    
+}
+
+header .logo {
+    width: 200px;
+    background-color: rgb(125, 70, 70);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu {
+    background-color: white;
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .menu .bar {
+    background-color: rgb(123, 89, 89);
+    width: 98px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+header .menu .menuText {
+    background-color: rgb(172, 54, 54);
+    width: 128px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    margin-top: 70px;
+    width: calc(100% - 100px);
+    background-color: lightgray;
+    padding: 0px 50px;
+}
+
+main .slider{
+    width: 100%;
+    height: 400px;
+    background-color: gray;
+    margin-bottom: 50px;
+}
+
+main .appAd{
+    width: 100%;
+    height: 300px;
+    background-color: silver;
+    display: flex;
+    align-items: end;
+    justify-content: center;  
+    margin-bottom: 30px;  
+}
+
+main .appAd .appAdCenterBox {
+    width: calc(100% - 300px);
+    height: 90%;
+    background-color: rgb(158, 84, 84);
+    display: flex;
+    margin: 0px 150px;
+}
+
+main .appAd .appAdCenterBox .adImg{
+   height: 100%;
+   width: 350px;
+   background-color: rgb(84, 158, 158);
+   display: flex;
+   justify-content: flex-end;
+   
+   
+}
+
+main .appAd .appAdCenterBox .adText{
+   height: 100%;
+   flex: 1;
+   display: flex;
+   flex-direction: column;
+   margin-left: 70px;
+   background-color: bisque;
+}
+
+.adButtonItem{
+    margin: 20px 0px;
+    display: flex;
+    flex-direction: row;
+}
+
+.adButton{
+    height: 40px;
+    background-color: brown;
+    margin-right: 10px;
+    padding: 0px 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.downloadBox{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    height: 120px;
+}
+
+.qrCode{
+    width: 120px;
+    height: 100%;
+    background-color: teal;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.downloadText{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.downloadBtn{
+    background-color: olive;
+    height: 50%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.downloadBtn:first-child{
+    margin-bottom: 10px;
+}
+
+.follow {
+    width: 100%;
+    height: 140px;
+    background-color: lightblue;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.follow .icon {
+    width: 116px;
+    height: 120px;
+    background-color: navy;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow .textBox {
+    height: 100%;
+    width: 360px;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow .textBox .buttonItem {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(245, 245, 245);
+}
+
+.follow .textBox .buttonItem .followButton {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow .textBox .buttonItem .followButton:first-child,
+.follow .textBox .buttonItem .followButton:nth-child(5){
+    background-color: rgb(14, 14, 14);
+    color: white;
+}
+
+.follow .textBox .buttonItem  .followButton:nth-child(2){
+    background-color: rgb(98, 125, 235);
+    color: white;
+}
+
+.follow .textBox .buttonItem  .followButton:nth-child(3){
+    background-color: rgb(183, 100, 95);
+    color: white;
+}
+.follow .textBox .buttonItem  .followButton:nth-child(4){
+    background-color: rgb(238, 12, 0);
+    color: white;
+}
+
+
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: darkgray;
+   
+}
