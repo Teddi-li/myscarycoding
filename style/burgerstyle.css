@@ -12,6 +12,7 @@ html,body{
   left:0;
   top:0;
   position:fixed;
+  z-index: 1000;
   background-color: white;
 }
 .navlogo{
@@ -54,6 +55,27 @@ html,body{
   width:95%;
   height:400px;
   background-color: darkred;
+  position: relative;
+  border-radius: 15px;
+}
+.slideimg .slideimgbtn{
+    width: 150px;
+    height: 50px;
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    bottom: 35px;
+    right: 100px;
+    cursor: pointer;
+    align-items:center;
+    justify-content:center;        /* keep them centered */
+    gap:8px;                /* <— inner padding of the pill */
+    border-radius:14px;
+    background:#54539a; color:#fff;
+    border:none;
+}
+.slideimgbtn:hover{
+    background-color: rgb(61, 61, 92);
 }
 .t{
     margin-left: 10px;
@@ -355,16 +377,18 @@ html,body{
 .box3 .box1 .boxitem .logoitem{
     height: 50%;
     width: 65%;
-    
-  border-radius: 15px;
+    border-radius: 15px;
+    display: flex;
     background-color: brown;
 }
 .box3 .box1 .boxitem .logoitems{
    height: 50%;
     width: 35%;
     border-radius: 15px;
+    display: flex;
     background-color: rgb(86, 43, 205);
-    margin-top: 22%;
+    align-self: flex-end;
+    margin-bottom: 5px;
 }
 
 .footer{

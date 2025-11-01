@@ -3,6 +3,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../style/burgerstyle.css" />
   <title>practice</title>
+  <link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  integrity="sha512-..."
+  crossorigin="anonymous"
+  referrerpolicy="no-referrer"
+/>
 </head>
 <body>
     <div class="navbar">
@@ -20,8 +27,13 @@
         </div>
     </div>
     <div class="webbody">
-        <div class="slideimg"></div>
-
+      
+        <div class="slideimg">
+          <button class="slideimgbtn" id="go">
+            <span>list</span>
+            <i class="fa-solid fa-bars" aria-hidden="true"></i>
+          </button>
+        </div>
 
         <div class="tworowbox">
           <div class="tworowbox2row">
@@ -140,5 +152,10 @@
 
 
     </div>
+    <script>
+      document.getElementById('go').addEventListener('click', () => {
+        window.location.href = 'https://www.burgerking.co.jp/home';   // navigate in same tab
+      });
+    </script>
 </body>
 </html>
