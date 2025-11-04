@@ -1,0 +1,304 @@
+html,body{
+  padding:0;
+  margin:0;
+  width:100%;
+  height:100%;
+}
+
+.navbar{
+  width:100%;
+  height:75px;
+  display:flex;
+  justify-content:space-between;
+  left:0;
+  top:0;
+  position:fixed;
+  z-index: 1001;
+  background-color: white;
+  position: relative;
+}
+
+.navlogo{
+  width:400px;
+  height:75px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background-color: brown;
+}
+
+.navmenu{
+  flex: 1;
+  height:75px;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  justify-content:space-around;
+
+}
+
+.navmenu .burgertag{
+    width: 120px;
+    height: 25px;
+    color:black;
+    border:none;
+    border-radius: 25px;
+    background-color: rgb(170, 228, 228);
+}
+
+
+.navmenu .burgertag:hover{
+    width:15%;
+    height: 70%;
+    background-color: rgb(170, 228, 228);
+
+}
+
+.headertetxt{
+  color:white;display: flex; 
+    align-items: center;justify-content: center;
+  width: 105px;
+  height: 30px;
+  font: 70px;
+  font-family:Arial, sans-serif;
+  font-weight:bold;
+  border-radius: 25px;
+  background-color: darkseagreen;
+  text-decoration: none;
+  cursor:pointer;
+}
+.webbody{
+  width:100%;
+  margin-top:75px;
+  background-color: rgb(238, 205, 175);  
+  display:flex;
+  flex-direction:column;
+  align-items:center; 
+}
+.menu{
+    font-size: 45px;
+    color: white;
+    display:flex;
+    width:100%;
+    height:200px;
+    background-color: rgb(115, 82, 41);
+    z-index: 1000;
+    margin: 0px 0px;
+    justify-content: center;
+    align-items: center;
+}
+.menutitle{
+    width:100%;    
+    height: 70px;
+    flex-direction: row;
+    display: flex;align-items: center;
+    
+
+}
+.menutitle .menutagblog {
+    width:60%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap:20px;
+    padding-left: 20px;
+    
+}
+.menutitle .menutagblog .menutag{
+    display: flex;
+    width: 150px;
+    font-size: 15px;
+    border-radius: 15px;
+    color: rgb(239, 224, 224);
+    font-family: Arial, sans-serif;
+    font-weight: bold; 
+    align-items: center;
+    text-decoration: none;
+    cursor: pointer;
+    justify-content: center;
+}
+.menutitle .menutagblog a{
+    background-color:   rgb(168, 121, 64);  }
+
+.menutitle .menutagblog a:hover{
+    background-color:   rgb(219, 205, 188);  
+  
+}
+.menutitle  .menuskeyword{
+    width: 40%;
+    display: flex;
+    flex-direction: row;
+    font-size: 25px;
+    color: rgb(71, 65, 65);
+    font-family: Arial, sans-serif;
+    font-weight: bold; 
+    text-decoration: none;
+    cursor: pointer;
+    padding-right: 70px;
+    justify-content: flex-end;
+}
+
+.menuskeyword:hover{
+    text-decoration: underline;
+}
+
+li{
+    list-style: none;
+    
+}
+.suggestionbox{
+    width:100%;
+    height: auto;
+    background-color: rgb(98, 107, 109);  
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1px;    
+    justify-content: center;
+    align-items: center;
+}
+.suggestionbox h1{
+    align-self: start;
+    margin-left: 20px;
+}
+.suggestionbox .suggestioncards{
+    width:90%;
+    display:flex;
+    height: auto;
+    color:aliceblue;  
+    flex-wrap: wrap; 
+    align-items: center;
+    justify-content: center;   
+    padding-bottom: 10px;;
+}
+
+.suggestionbox .suggestioncards .suggestionitem{
+    width: 300px;
+    height: 250px;
+    display: flex;
+    border-radius: 15px;
+    margin-top: 20px; 
+    margin-left: 30px;
+    color:aliceblue;   
+}
+.suggestionbox .suggestioncards  .suggestionitem .suggestionitembox{
+    width:100%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    border-color: bisque;
+    background-color: rgb(95, 78, 99);
+    gap: 10px;            
+    border-radius: 25px; 
+    justify-content: center;
+    align-items: center;
+
+}
+
+.suggestionbox .suggestioncards  .suggestionitem .suggestionitembox .suggestionimg img{
+    width: 150px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.suggestionbox .suggestioncards  .suggestionitem .suggestionitembox .suggestionText{
+    color:black;
+    width: 170px;
+    display:flex;
+    text-align: center;
+    height: 55px;
+    background-color: aquamarine;
+    border-radius: 10px;    
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+.suggestionbox .suggestioncards  .suggestionitem .suggestionitembox .suggestionbutton{
+    color:rgb(205, 187, 187);
+    display: flex;    
+    background-color: brown;
+    border-radius:15px ;
+    width: 105px;
+    height:35px;    
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.suggestionbox .suggestioncards  .suggestionitem .suggestionitembox .suggestionbutton:hover{
+    background-color: rgb(116, 188, 188);}
+  
+
+
+
+
+
+
+
+.footer{
+    width:100%;
+    height:200px;
+    background-color: darkslategray;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+}
+.footer .footerbox{
+    width:33%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.footer .footerbox h1 {
+    font-size: 35px;
+    color: white;
+}
+
+.footer .footerbox p {
+    font-size: small;
+    color: rgb(193, 174, 174);
+}
+.footer .footerbox2{
+    width: 33%;
+    height: 100%;
+}
+.footer .footerinside{
+    width:33%;
+    height:200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+.footer .footerinside .foottext{
+    width: 100%;
+    height: 50%;
+    display:flex;
+    padding-top: 25px ;
+    justify-content:flex-end;
+}
+.footer .footerinside .foottext a{
+    color: white;
+    font-size: medium;
+    margin-right: 10px;
+    text-decoration: none;
+    margin: 0px 55px 55px 0px;
+    cursor: pointer;
+}
+.footer .footerinside .foottext a{
+    text-decoration: underline;
+}
+.footer .footerinside .foottext2{
+    width: 100%;
+    height: 50%;
+    display:flex;
+    justify-content:flex-end;
+    cursor: pointer;
+
+}
