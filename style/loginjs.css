@@ -1,0 +1,132 @@
+body{
+    padding:0;
+    margin:0;
+    width:100%;
+    height:100vh;    
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{    
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.first_part{
+  background: #111827;
+  padding: 32px 28px;
+  width: 320px;
+  border-radius: 18px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.55);
+  border: 1px solid rgba(148, 163, 253, 0.18);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.white{
+    background-color: aliceblue;
+    border-radius: 15%;
+    color:black;
+    width: 300px;
+    height:auto;
+    padding:10px 10px 10px 10px;
+}
+.inputin{
+    width: 300px;
+}
+.inputin::placeholder {
+  color: #6b7280;
+}
+.inputin:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 1px rgba(56, 189, 248, 0.25);
+  background: #969cab;
+}
+
+.secpart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 4px;
+  font-size: 12px;
+  color: #9ca3af;
+}
+
+.secpart label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.secpart input[type="checkbox"] {
+  width: 14px;
+  height: 14px;
+  accent-color: #38bdf8;
+}
+
+/* Login button */
+.movebutton {
+  padding: 8px 16px;
+  border-radius: 999px;
+  border: none;
+  background: linear-gradient(to right, #38bdf8, #6366f1);
+  color: #020817;
+  font-weight: 600;
+  font-size: 12px;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, opacity 0.15s ease;
+}
+
+.movebutton:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(79, 70, 229, 0.35);
+}
+
+.movebutton:active {
+  transform: translateY(1px);
+  box-shadow: none;
+  opacity: 0.85;
+}
+
+/* Bottom row */
+.thiedpart {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+  font-size: 11px;
+}
+
+/* Forgot password link */
+.forgetpwd {
+  color: #38bdf8;
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+.forgetpwd:hover {
+  color: #60a5fa;
+  text-decoration: underline;
+}
+
+/* Second button (Sign in / Sign up) */
+.thiedpart button {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid #4b5563;
+  background: transparent;
+  color: #e5e7eb;
+  font-size: 11px;
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.thiedpart button:hover {
+  background: #111827;
+  border-color: #38bdf8;
+  color: #38bdf8;
+}
