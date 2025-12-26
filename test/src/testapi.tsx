@@ -8,15 +8,11 @@ interface User {
 
 function App() {
   const [users, setUsers] = useState<User[]>([]);
-
-  // GET users when component loads
   useEffect(() => {
     fetch("http://127.0.0.1:8000/users")
       .then(res => res.json())
       .then(data => setUsers(data));
   }, []);
-
-  // POST user (only when button clicked)
 const createUser = async () => {
   console.log("Button clicked");
 
